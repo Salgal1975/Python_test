@@ -7,30 +7,17 @@ high_and_low("1 9 3 4 -5")  # return "9 -5"
 
 
 def high_and_low(number):
-    # number = number.replace("", "")
-    # print(type(number), number)
-    # print('*************1**************')
     a = ' '.join(number.split())
     a = a.split()
-    # print('*************2**************')
-    # print(type(a), a)
-    # print('*************3**************')
-
     a = [c for c in a]
-    # print('*************4**************')
     for k in range(0, len(a)):
         a[k] = int(a[k])
-    # print('************5***************')
-    # print(type(a), a)
-    # print('************6***************')
 
     x = max(a)
     y = min(a)
 
     return x, y
 
-
-# high_and_low("1 9 3 4 -5 100")
 
 # '''
 def test_min_max():
