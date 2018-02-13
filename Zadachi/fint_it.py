@@ -20,6 +20,8 @@ def find_it(seq):
         a = a[0]
         # print(a)
         return a
+    elif len(a) < 1:
+        return None
     # print(type(a), a)
 
 
