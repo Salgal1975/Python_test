@@ -15,3 +15,7 @@ str1 это ' katas' и str2 'steak' должен вернуться false.
 
 def scramble(s1, s2):
     pass
+
+
+if __name__ == "main":
+    pass
