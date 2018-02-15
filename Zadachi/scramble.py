@@ -2,8 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 '''
-Запись function scramble(str1,str2)возвращается, trueесли часть str1символов
-может быть перегруппирована для соответствия str2, иначе возвращается false.
+Запись function scramble( str1,str2 )возвращается, true если часть str1
+символов может быть перегруппирована для соответствия str2, иначе возвращается
+false.
 Например:
 str1 это 'cedewaraaossoqqyt' и str2 есть 'codewars' должен вернуться true.
 str1 это 'rkqodlw'и str2 есть 'world' выход должен вернуться true.
@@ -14,8 +15,43 @@ str1 это ' katas' и str2 'steak' должен вернуться false.
 
 
 def scramble(s1, s2):
-    pass
+    temp = 0
+    if s1 != s2:
+        # print(len(s2), temp)
+        for s in s2:
+            a = s in s1
+            # print(a, s)
+            if a:
+                temp += 1
+            if (temp == len(s2)):
+                print(len(s2), temp)
+                return True
+            # print('True')
+        print(len(s2), temp)
+        # else:
+        #     return False
+    #     print('False')
+    return False
 
 
-if __name__ == "main":
-    pass
+s1 = 'katas'
+s2 = 'steak'
+
+res = scramble(s1, s2)
+print(res)
+
+'''
+def scramble(s1, s2):
+    if s1 == s2:
+        return True
+    else:
+        temp = 0
+        for s in s2:
+            a = s in s1
+            if a:
+                temp += 1
+        if (temp == len(s2)):
+            return True
+        else:
+            return False
+'''
