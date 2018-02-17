@@ -14,7 +14,7 @@ def reverseWords(str_s:str):
     for i in a:
         tmp += i + ' '
     print(tmp)
-    return tmp
+    return str(tmp)
 
 g = "hello world!"
 reverseWords(g)
